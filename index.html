@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b1324" />
+  <meta
+    name="description"
+    content="Aurora Atelier is a glassmorphic vanilla HTML, CSS, and JavaScript showcase packed with motion, images, and layered effects."
+  />
+  <title>Aurora Atelier | Glassmorphism Visual Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+
+  <header class="topbar glass">
+    <a class="brand" href="#home" aria-label="Aurora Atelier home">
+      <span class="brand-mark"></span>
+      <span class="brand-copy">
+        <strong>Aurora Atelier</strong>
+        <small>Vanilla visual lab</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#gallery">Gallery</a>
+      <a href="#effects">Effects</a>
+      <a href="#story">Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="button button-ghost" href="#gallery">Explore</a>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Vanilla HTML, CSS, and JS only</p>
+        <h1>Make it feel like a <span>luxury magazine</span> that learned how to move.</h1>
+        <p class="lede">
+          Glass layers, neon edges, animated light, parallax depth, soft particles, and a dense wall of images wrapped
+          into one immersive landing page.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#gallery">Open the gallery</a>
+          <a class="button button-secondary" href="#effects">See the effects</a>
+        </div>
+        <div class="metric-grid">
+          <div class="metric glass">
+            <span>Glass panes</span>
+            <strong><span class="count-up" data-count="24">0</span>+</strong>
+          </div>
+          <div class="metric glass">
+            <span>Images staged</span>
+            <strong><span class="count-up" data-count="12">0</span></strong>
+          </div>
+          <div class="metric glass">
+            <span>Motion systems</span>
+            <strong><span class="count-up" data-count="8">0</span></strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal">
+        <div class="collage-grid" id="heroCollage"></div>
+        <div class="hero-note glass tilt-card">
+          <p>Built to glow on load, deepen on hover, and stay crisp on mobile.</p>
+          <span>Scroll for the full spread</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker glass" aria-label="Motion strip">
+      <div class="ticker-track">
+        <span>GLASS MORPHISM</span><span>CURSOR GLOW</span><span>PARALLAX DEPTH</span><span>IMAGE WALL</span><span>LIGHTBOX PREVIEW</span><span>SCROLL REVEAL</span><span>3D TILT</span><span>SOFT PARTICLES</span>
+        <span>GLASS MORPHISM</span><span>CURSOR GLOW</span><span>PARALLAX DEPTH</span><span>IMAGE WALL</span><span>LIGHTBOX PREVIEW</span><span>SCROLL REVEAL</span><span>3D TILT</span><span>SOFT PARTICLES</span>
+      </div>
+    </section>
+
+    <section id="gallery" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Curated image wall</p>
+        <h2>A lot of images, arranged like an editorial spread.</h2>
+        <p>
+          The layout mixes tall frames, wide frames, and hovering glass cards so the page never collapses into a plain
+          grid.
+        </p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section id="effects" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Motion stack</p>
+        <h2>Every layer is doing something.</h2>
+        <p>The page leans on blur, glow, motion, parallax, spotlighting, and depth cues without feeling noisy.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card glass tilt-card">
+          <p class="feature-number">01</p>
+          <h3>Glass depth</h3>
+          <p>Blurred surfaces, luminous borders, inner shadows, and soft reflection layers create the glassmorphism feel.</p>
+        </article>
+        <article class="feature-card glass tilt-card">
+          <p class="feature-number">02</p>
+          <h3>Hover physics</h3>
+          <p>Cards tilt toward the pointer, images scale, and overlays slide so the whole page feels responsive.</p>
+        </article>
+        <article class="feature-card glass tilt-card">
+          <p class="feature-number">03</p>
+          <h3>Ambient motion</h3>
+          <p>Floating orbs, a particle canvas, and a drifting ticker keep the background alive without overwhelming the content.</p>
+        </article>
+        <article class="feature-card glass tilt-card">
+          <p class="feature-number">04</p>
+          <h3>Editorial rhythm</h3>
+          <p>Mixed image sizes, count-up metrics, and a split-story section break the layout into dramatic beats.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="story" class="section reveal editorial">
+      <article class="story-card glass">
+        <p class="eyebrow">Editorial note</p>
+        <h2>Designed to feel hand-crafted, layered, and expensive.</h2>
+        <p>
+          This page uses vanilla JavaScript to generate the gallery, animate counts, control the lightbox, and drive a
+          particle background. The CSS handles the rest with gradients, blur, glow, sticky glass, and responsive
+          compositions.
+        </p>
+        <div class="story-tags">
+          <span>Vanilla only</span>
+          <span>Glass blur</span>
+          <span>Lightbox</span>
+          <span>Responsive</span>
+        </div>
+      </article>
+      <div class="stacked-gallery" id="stackedGallery"></div>
+    </section>
+
+    <section id="contact" class="section reveal cta">
+      <div class="cta-card glass">
+        <div>
+          <p class="eyebrow">Final polish</p>
+          <h2>Want it even louder? I can turn this into a full portfolio, product, or agency site next.</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary" href="#home">Back to top</a>
+          <a class="button button-secondary" href="#gallery">Replay the gallery</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Aurora Atelier. Built in plain HTML, CSS, and JavaScript.</p>
+    <p>No framework, just layers.</p>
+    <p>Made by Krish Arya and Saksham Gard with love.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-panel glass">
+      <button class="lightbox-close" type="button" aria-label="Close preview" data-close>×</button>
+      <img id="lightboxImage" alt="" />
+      <div class="lightbox-caption">
+        <p class="eyebrow" id="lightboxCategory">Featured frame</p>
+        <h3 id="lightboxTitle">Untitled</h3>
+        <p id="lightboxDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
