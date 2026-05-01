@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#0b1324" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f4eee6" />
   <meta
     name="description"
-    content="Aurora Atelier is a glassmorphic vanilla HTML, CSS, and JavaScript showcase packed with motion, images, and layered effects."
+    content="Lumen and Grain is a photographer portfolio theme with editorial layouts, curated galleries, and cinematic motion."
   />
-  <title>Aurora Atelier | Glassmorphism Visual Studio</title>
+  <title>Lumen &amp; Grain | Photographer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
@@ -28,47 +28,46 @@
   <div class="progress-bar" aria-hidden="true"><span></span></div>
 
   <header class="topbar glass">
-    <a class="brand" href="#home" aria-label="Aurora Atelier home">
+    <a class="brand" href="#home" aria-label="Lumen and Grain home">
       <span class="brand-mark"></span>
       <span class="brand-copy">
-        <strong>Aurora Atelier</strong>
-        <small>Vanilla visual lab</small>
+        <strong>Lumen &amp; Grain</strong>
+        <small>Photography studio</small>
       </span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#gallery">Gallery</a>
-      <a href="#effects">Effects</a>
-      <a href="#story">Story</a>
-      <a href="#contact">Contact</a>
+      <a href="#gallery">Portfolio</a>
+      <a href="#effects">Services</a>
+      <a href="#story">Approach</a>
+      <a href="#contact">Book</a>
     </nav>
-    <a class="button button-ghost" href="#gallery">Explore</a>
+    <a class="button button-ghost" href="#contact">Book</a>
   </header>
 
   <main id="home">
     <section class="hero section">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Vanilla HTML, CSS, and JS only</p>
-        <h1>Make it feel like a <span>luxury magazine</span> that learned how to move.</h1>
+        <p class="eyebrow">Natural light photographer</p>
+        <h1>Light-led stories for <span>modern love and travel</span>.</h1>
         <p class="lede">
-          Glass layers, neon edges, animated light, parallax depth, soft particles, and a dense wall of images wrapped
-          into one immersive landing page.
+          Portrait, wedding, and editorial work shaped by soft direction, real moments, and print-ready detail.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#gallery">Open the gallery</a>
-          <a class="button button-secondary" href="#effects">See the effects</a>
+          <a class="button button-primary" href="#gallery">View the portfolio</a>
+          <a class="button button-secondary" href="#effects">See the services</a>
         </div>
         <div class="metric-grid">
           <div class="metric glass">
-            <span>Glass panes</span>
-            <strong><span class="count-up" data-count="24">0</span>+</strong>
+            <span>Sessions delivered</span>
+            <strong><span class="count-up" data-count="180">0</span>+</strong>
           </div>
           <div class="metric glass">
-            <span>Images staged</span>
+            <span>Cities captured</span>
+            <strong><span class="count-up" data-count="27">0</span></strong>
+          </div>
+          <div class="metric glass">
+            <span>Years shooting</span>
             <strong><span class="count-up" data-count="12">0</span></strong>
-          </div>
-          <div class="metric glass">
-            <span>Motion systems</span>
-            <strong><span class="count-up" data-count="8">0</span></strong>
           </div>
         </div>
       </div>
@@ -76,97 +75,95 @@
       <div class="hero-stage reveal">
         <div class="collage-grid" id="heroCollage"></div>
         <div class="hero-note glass tilt-card">
-          <p>Built to glow on load, deepen on hover, and stay crisp on mobile.</p>
-          <span>Scroll for the full spread</span>
+          <p>Week-of editing, curated galleries, and print-ready files built for albums.</p>
+          <span>Scroll for featured work</span>
         </div>
       </div>
     </section>
 
     <section class="ticker glass" aria-label="Motion strip">
       <div class="ticker-track">
-        <span>GLASS MORPHISM</span><span>CURSOR GLOW</span><span>PARALLAX DEPTH</span><span>IMAGE WALL</span><span>LIGHTBOX PREVIEW</span><span>SCROLL REVEAL</span><span>3D TILT</span><span>SOFT PARTICLES</span>
-        <span>GLASS MORPHISM</span><span>CURSOR GLOW</span><span>PARALLAX DEPTH</span><span>IMAGE WALL</span><span>LIGHTBOX PREVIEW</span><span>SCROLL REVEAL</span><span>3D TILT</span><span>SOFT PARTICLES</span>
+        <span>EDITORIAL PORTRAIT</span><span>WEDDING STORIES</span><span>NATURAL LIGHT</span><span>FILM GRAIN</span><span>TRAVEL JOURNAL</span><span>PRINT READY</span><span>ART DIRECTION</span><span>FAMILY MOMENTS</span>
+        <span>EDITORIAL PORTRAIT</span><span>WEDDING STORIES</span><span>NATURAL LIGHT</span><span>FILM GRAIN</span><span>TRAVEL JOURNAL</span><span>PRINT READY</span><span>ART DIRECTION</span><span>FAMILY MOMENTS</span>
       </div>
     </section>
 
-    <section id="gallery" class="section reveal">
-      <div class="section-heading">
-        <p class="eyebrow">Curated image wall</p>
-        <h2>A lot of images, arranged like an editorial spread.</h2>
+    <section id="gallery" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Portfolio</p>
+        <h2>A curated body of work, styled like an editorial spread.</h2>
         <p>
-          The layout mixes tall frames, wide frames, and hovering glass cards so the page never collapses into a plain
-          grid.
+          The layout mixes tall frames, wide frames, and layered cards so the story feels lived in instead of grid-locked.
         </p>
       </div>
       <div class="gallery-grid" id="galleryGrid"></div>
     </section>
 
-    <section id="effects" class="section reveal">
-      <div class="section-heading">
-        <p class="eyebrow">Motion stack</p>
-        <h2>Every layer is doing something.</h2>
-        <p>The page leans on blur, glow, motion, parallax, spotlighting, and depth cues without feeling noisy.</p>
+    <section id="effects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Coverage built around people, not poses.</h2>
+        <p>From sessions to full weekends, the focus is on light, timing, and direction that feels easy.</p>
       </div>
-      <div class="feature-grid">
+      <div class="feature-grid reveal">
         <article class="feature-card glass tilt-card">
           <p class="feature-number">01</p>
-          <h3>Glass depth</h3>
-          <p>Blurred surfaces, luminous borders, inner shadows, and soft reflection layers create the glassmorphism feel.</p>
+          <h3>Engagement and portrait</h3>
+          <p>Short sessions for couples, creatives, and families with a relaxed, natural flow.</p>
         </article>
         <article class="feature-card glass tilt-card">
           <p class="feature-number">02</p>
-          <h3>Hover physics</h3>
-          <p>Cards tilt toward the pointer, images scale, and overlays slide so the whole page feels responsive.</p>
+          <h3>Wedding coverage</h3>
+          <p>Full day storytelling with timeline help, vendor coordination, and calm direction.</p>
         </article>
         <article class="feature-card glass tilt-card">
           <p class="feature-number">03</p>
-          <h3>Ambient motion</h3>
-          <p>Floating orbs, a particle canvas, and a drifting ticker keep the background alive without overwhelming the content.</p>
+          <h3>Brand and editorial</h3>
+          <p>Commercial and editorial work built for campaigns, magazines, and digital launches.</p>
         </article>
         <article class="feature-card glass tilt-card">
           <p class="feature-number">04</p>
-          <h3>Editorial rhythm</h3>
-          <p>Mixed image sizes, count-up metrics, and a split-story section break the layout into dramatic beats.</p>
+          <h3>Albums and prints</h3>
+          <p>Fine art albums, museum-grade prints, and archival framing for the long term.</p>
         </article>
       </div>
     </section>
 
-    <section id="story" class="section reveal editorial">
-      <article class="story-card glass">
-        <p class="eyebrow">Editorial note</p>
-        <h2>Designed to feel hand-crafted, layered, and expensive.</h2>
+    <section id="story" class="section editorial">
+      <article class="story-card glass reveal">
+        <p class="eyebrow">Approach</p>
+        <h2>Photographs that feel like memory, not performance.</h2>
         <p>
-          This page uses vanilla JavaScript to generate the gallery, animate counts, control the lightbox, and drive a
-          particle background. The CSS handles the rest with gradients, blur, glow, sticky glass, and responsive
-          compositions.
+          Direction is gentle, movement is honest, and the edit keeps skin tones true. The goal is a gallery that feels
+          cohesive, cinematic, and ready to print.
         </p>
         <div class="story-tags">
-          <span>Vanilla only</span>
-          <span>Glass blur</span>
-          <span>Lightbox</span>
-          <span>Responsive</span>
+          <span>Natural light</span>
+          <span>35mm feel</span>
+          <span>Travel ready</span>
+          <span>Print lab</span>
         </div>
       </article>
       <div class="stacked-gallery" id="stackedGallery"></div>
     </section>
 
-    <section id="contact" class="section reveal cta">
-      <div class="cta-card glass">
+    <section id="contact" class="section cta">
+      <div class="cta-card glass reveal">
         <div>
-          <p class="eyebrow">Final polish</p>
-          <h2>Want it even louder? I can turn this into a full portfolio, product, or agency site next.</h2>
+          <p class="eyebrow">Next steps</p>
+          <h2>Ready to plan a session or a full wedding weekend?</h2>
         </div>
         <div class="cta-actions">
           <a class="button button-primary" href="#home">Back to top</a>
-          <a class="button button-secondary" href="#gallery">Replay the gallery</a>
+          <a class="button button-secondary" href="#gallery">View the portfolio</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Aurora Atelier. Built in plain HTML, CSS, and JavaScript.</p>
-    <p>No framework, just layers.</p>
+    <p>Lumen &amp; Grain. Portrait and wedding photography.</p>
+    <p>Available worldwide.</p>
     <p>Made by Krish Arya and Saksham Gard with love.</p>
   </footer>
 

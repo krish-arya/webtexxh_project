@@ -14,100 +14,164 @@ const progressFill = document.querySelector(".progress-bar span");
 
 const mediaLibrary = [
   {
-    title: "Wild Horizon",
-    category: "Landscape",
-    description: "Mountain ridgelines with aurora-like color.",
+    title: "Golden Hour Vows",
+    category: "Wedding",
+    description: "Soft sunset light with a quiet editorial feel.",
     size: "feature",
     src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#18c6ff", end: "#7b61ff", soft: "#ffd166" },
+    palette: { start: "#c0824a", end: "#6f7c5a", soft: "#f0d7b4" },
   },
   {
-    title: "Deep Current",
-    category: "Seascapes",
-    description: "Ocean blues pushed through glossy glass.",
+    title: "Saltwater Quiet",
+    category: "Seascape",
+    description: "Coastal tones with wind and motion.",
     size: "tall",
     src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#ff7a59", end: "#ff3d81", soft: "#ffe08a" },
+    palette: { start: "#8b6a5c", end: "#bfa26b", soft: "#efe2c5" },
   },
   {
-    title: "Forest Static",
-    category: "Nature",
-    description: "A quiet green corridor with cinematic depth.",
+    title: "Pine and Linen",
+    category: "Portrait",
+    description: "Natural light portrait with calm texture.",
     size: "square",
     src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#00c2a8", end: "#1f6feb", soft: "#8be9ff" },
+    palette: { start: "#6f7c5a", end: "#a98f6a", soft: "#e7dcc8" },
   },
   {
-    title: "Velvet Transit",
-    category: "City light",
-    description: "Warm motion and reflective steel.",
+    title: "City Afterlight",
+    category: "Street",
+    description: "Evening lines and warm reflections.",
     size: "wide",
     src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#f9a826", end: "#f35b9c", soft: "#fff2b2" },
+    palette: { start: "#b07755", end: "#6b5b48", soft: "#f2dcc4" },
   },
   {
-    title: "Night Bloom",
-    category: "Portrait",
-    description: "An editorial frame with soft glow and contrast.",
+    title: "Studio Bloom",
+    category: "Editorial",
+    description: "Softbox glow and minimal styling.",
     size: "tall",
     src: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#8a5cff", end: "#2dd4bf", soft: "#ffb3d9" },
+    palette: { start: "#c18d67", end: "#9c7b5d", soft: "#f5e2cf" },
   },
   {
-    title: "Glass Lines",
+    title: "Glasshouse",
     category: "Architecture",
-    description: "Clean geometry with a metallic sheen.",
+    description: "Clean geometry with warm steel.",
     size: "square",
     src: "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#14b8a6", end: "#0f172a", soft: "#93c5fd" },
+    palette: { start: "#7a8470", end: "#c0a57a", soft: "#e2d2b8" },
   },
   {
-    title: "Solar Echo",
-    category: "Desert",
-    description: "Bright dunes and warm horizon tones.",
+    title: "Desert Frame",
+    category: "Travel",
+    description: "Sun, wind, and open space.",
     size: "banner",
     src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#f43f5e", end: "#7c3aed", soft: "#fde68a" },
+    palette: { start: "#c0895a", end: "#9a6b4a", soft: "#f2d9b8" },
   },
   {
-    title: "Prism Field",
-    category: "Landscape",
-    description: "Sharp light and soft atmosphere blended together.",
+    title: "Rainy Letters",
+    category: "Documentary",
+    description: "Quiet moments in soft weather.",
     size: "square",
     src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#22c55e", end: "#0ea5e9", soft: "#bef264" },
+    palette: { start: "#6a5f54", end: "#8b7c6d", soft: "#e4d6c5" },
   },
   {
-    title: "Moonlit Drift",
-    category: "Shoreline",
-    description: "Blue hour reflections with a glossy finish.",
+    title: "Moonlit Dunes",
+    category: "Landscape",
+    description: "Low light and soft gradients.",
     size: "tall",
     src: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#f97316", end: "#be185d", soft: "#fef08a" },
+    palette: { start: "#8a725f", end: "#5e564f", soft: "#d9c8b6" },
   },
   {
-    title: "Luminous Frame",
-    category: "Abstract",
-    description: "Soft color fields built for motion and blur.",
+    title: "Paper Crane",
+    category: "Still Life",
+    description: "Texture, shadows, and a calm set.",
     size: "wide",
     src: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#06b6d4", end: "#2563eb", soft: "#f5d0fe" },
+    palette: { start: "#c0a07a", end: "#8a735d", soft: "#f0dfc9" },
   },
   {
-    title: "Silent Avenue",
-    category: "Urban",
-    description: "Street lines turned into a moody editorial slide.",
+    title: "Neon Market",
+    category: "Travel",
+    description: "Night color with restrained glow.",
     size: "square",
     src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#e11d48", end: "#7c2d12", soft: "#fdba74" },
+    palette: { start: "#b06a5a", end: "#7c5a57", soft: "#f2d3c8" },
   },
   {
-    title: "Afterglow Ridge",
-    category: "Travel",
-    description: "A final frame with a cinematic horizon.",
+    title: "Hilltop Ceremony",
+    category: "Wedding",
+    description: "A wide frame for the full story.",
     size: "wide",
     src: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
-    palette: { start: "#84cc16", end: "#0f766e", soft: "#bbf7d0" },
+    palette: { start: "#a0785a", end: "#6f7c5a", soft: "#e8d5bf" },
+  },
+  {
+    title: "Studio Window",
+    category: "Portrait",
+    description: "Soft shadow and a quiet expression.",
+    size: "tall",
+    src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#b28a6a", end: "#8c6f5d", soft: "#ead9c7" },
+  },
+  {
+    title: "Copper Fields",
+    category: "Landscape",
+    description: "Late light and warm horizon tones.",
+    size: "wide",
+    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#c08a5e", end: "#7c6a56", soft: "#f0d9c2" },
+  },
+  {
+    title: "Sunday Market",
+    category: "Documentary",
+    description: "Street rhythm and candid details.",
+    size: "square",
+    src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#9a7a63", end: "#6d5f54", soft: "#e7d3c1" },
+  },
+  {
+    title: "Rainroom",
+    category: "Editorial",
+    description: "Moody light with a fashion edge.",
+    size: "tall",
+    src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#a4816d", end: "#7b6658", soft: "#ead8c8" },
+  },
+  {
+    title: "Olive Terrace",
+    category: "Travel",
+    description: "Warm stone, linen, and open air.",
+    size: "wide",
+    src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#a98a6a", end: "#6e7b5a", soft: "#eadcc6" },
+  },
+  {
+    title: "Midnight Film",
+    category: "Street",
+    description: "Low light with a soft glow.",
+    size: "square",
+    src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#866a5e", end: "#5a4c46", soft: "#d7c6b8" },
+  },
+  {
+    title: "Lakeside Notes",
+    category: "Lifestyle",
+    description: "Quiet details and open water.",
+    size: "banner",
+    src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#9b7f6a", end: "#6a6f5d", soft: "#e8d6c6" },
+  },
+  {
+    title: "Archive Still",
+    category: "Still Life",
+    description: "Texture, shadow, and quiet form.",
+    size: "square",
+    src: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1200&q=80",
+    palette: { start: "#b08c6c", end: "#7a6b5c", soft: "#efddca" },
   },
 ];
 
@@ -153,8 +217,8 @@ function buildFallbackArt(title, category, palette, index) {
       <path d="M0 ${waveA} C 220 ${waveA - 96}, 340 ${waveA + 62}, 560 ${waveA - 10} S 960 ${waveA - 92}, 1200 ${waveA + 26}" fill="none" stroke="#ffffff" stroke-opacity="0.36" stroke-width="4" />
       <path d="M0 ${waveB} C 220 ${waveB - 82}, 360 ${waveB + 76}, 560 ${waveB + 16} S 980 ${waveB - 68}, 1200 ${waveB + 48}" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2" />
       <rect x="54" y="54" width="1092" height="792" rx="48" fill="none" stroke="#ffffff" stroke-opacity="0.24" stroke-width="2" />
-      <text x="78" y="736" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="70" font-weight="700">${titleSafe}</text>
-      <text x="80" y="794" fill="#ffffff" fill-opacity="0.82" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="500">${categorySafe}</text>
+      <text x="78" y="736" fill="#ffffff" font-family="Cormorant Garamond, serif" font-size="70" font-weight="600">${titleSafe}</text>
+      <text x="80" y="794" fill="#ffffff" fill-opacity="0.82" font-family="Manrope, sans-serif" font-size="28" font-weight="500">${categorySafe}</text>
     </svg>`;
 
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
@@ -386,8 +450,8 @@ function initStarfield() {
       radius: (Math.random() * 1.6 + 0.5) * devicePixelRatio,
       speed: (Math.random() * 0.16 + 0.03) * devicePixelRatio,
       drift: (Math.random() - 0.5) * 0.12 * devicePixelRatio,
-      alpha: Math.random() * 0.55 + 0.2,
-      hue: Math.random() < 0.5 ? "124,247,255" : "255,138,226",
+      alpha: Math.random() * 0.4 + 0.12,
+      hue: Math.random() < 0.5 ? "196,177,156" : "150,132,114",
       twinkle: Math.random() * Math.PI * 2,
     };
   }
@@ -406,7 +470,7 @@ function initStarfield() {
 
   function drawStars(animate) {
     context.clearRect(0, 0, width, height);
-    context.globalCompositeOperation = "lighter";
+    context.globalCompositeOperation = "screen";
 
     stars.forEach((star) => {
       if (animate) {
